@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Complete Bootstrap 4 Website Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo-img" src="img/logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bg-light" src="img/background.png" alt="" />
+          <div class="carousel-caption">
+            <h1>What's Span</h1>
+            <h3>We build your dream Website</h3>
+            <button class="btn btn-outline-light btn-lg">View Demo</button>
+            <button class="btn btn-primary btn-lg">Get Started</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/background2.png" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/background3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--- Jumbotron -->
+    <div class="container-fluid padding">
+      <div class="row jumbotron padding"> 
+        <div class="col-md-9 col-lg-9 col-xl-10 col-sm-12 col-xs-12">
+          <p class="lead">
+            A website hosting allow an individual and organizations to make
+            their wesite accessible via world wide web.
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-2 col-sm-12 col-xs-12">
+          <a href="">
+            <button class="btn btn-outline-secondry btn-lg">
+              Web Hosting
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--- Welcome Section -->
+    <div id="about" class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Build with ease</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Thousands of Templates & Layouts, Easy to Use, No Code Needed, 24/7
+            Support! The Best Templates. Free Hosting & Domain. Hosting Services
+            Included. 2019 Ranking. Expert Reviews. Only Trusted Top Brands.
+            Free Trial. 1000+ Templates. Easy to Use.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-code"></i>
+          <h3>HTML5</h3>
+          <p>Build with the latest version of HTML, HTML5</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-bold"></i>
+          <h3>Bootstrap</h3>
+          <p>Build with the latest version of Bootstrap 4</p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <i class="fab fa-css3"></i>
+          <h3>Css3</h3>
+          <p>Build with the latest version of Css3</p>
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+    <!--- Two Column Section -->
+    <div id="services" class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2>We build Responsive</h2>
+          <p>
+            Responsive web design is an approach to web design that makes web
+            pages render well on a variety of devices and window or screen
+            sizes. Recent work also considers the viewer proximity as part of
+            the viewing context as an extension for RWD.
+          </p>
+          <a href="" class="btn btn-primary"> Learn More... </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/desk.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure>
+    <!--- Emoji Section -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">
+        Click Here..
+    </button>
+    <div class="collapse" id="emoji">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/panda.gif" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/poo.gif" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/unicorn.gif" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/chicken.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Meet the team -->
+    <div id="team" class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4"> Meet Our Team</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/team1.png" alt="Jhon Doe">
+                    <div class="card-body">
+                    <h2 class="card-title"> Jhon Doe</h2>
+                    <p class="card-text">
+                        Jhon doe is an front-end developer
+                        with 10years of experiance in developing 
+                        all types of websites using all famous technology.
+                    </p>
+                    <a class="btn btn-outline-secondary" href="#">See Profile</a>
+                </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/team2.png" alt="Jhon Doe">
+                    <div class="card-body">
+                    <h2 class="card-title"> Mark Liam</h2>
+                    <p class="card-text">
+                            Mark Liam is an back-end developer
+                        with 10years of experiance in developing 
+                        all types of websites using all famous technology.
+                    </p>
+                    <a class="btn btn-outline-secondary" href="#">See Profile</a>
+                </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/team3.png" alt="Jhon Doe">
+                    <div class="card-body">
+                    <h2 class="card-title"> Maria Tom</h2>
+                    <p class="card-text">
+                            Maria Tom is an designer 
+                        with 5years of experiance in designing 
+                        all types of website logo, banner etc
+                         using all famous technology.
+                    </p>
+                    <a class="btn btn-outline-secondary" href="#">See Profile</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+            <div class="row padding">
+              <div class="col-lg-6">
+                <h2>Our Philosophy</h2>
+                <p>
+                 We believe in building powerfull, flexible , userfriendly and easy to
+                 mantain website to make out client life better and easy
+                 to managable. We always trying to give our 100% untill the client
+                 satisfied with us 100%.
+                    <br>
+                  Responsive web design is an approach to web design that makes web
+                  pages render well on a variety of devices and window or screen
+                  sizes. Recent work also considers the viewer proximity as part of
+                  the viewing context as an extension for RWD. 
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <img src="img/bootstrap2.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <hr class="my-4">
+          </div>
+    <!--- Connect -->
+          <div id="contact" class="container-fluid padding">
+              <div class="row text-center padding">
+                  <div class="col-12 ">
+                    <h2>Connect</h2>
+                  </div>
+                  <div class="col-12 social padding text-center">
+                    <a href="#"><i class="size fab fa-facebook"></i></a>
+                    <a href="#"><i class="size fab fa-twitter"></i></a>
+                    <a href="#"><i class="size fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="size fab fa-instagram"></i></a>
+                    <a href="#"><i class="size fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img class="logo-img" src="img/logo.png" alt="Logo">
+                    <hr class="light">
+                    <p>555-555-555</p>
+                    <p>zahidabdulrafay@gmail.com</p>
+                    <p>FTC near shah-re-faisal</p>
+                    <p>Near Nursery, karachi</p>
+                </div>
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h2>Our Hours</h2>
+                    <hr class="light">
+                    <p>Mon-Fri: 9am to 5pm</p>
+                    <p>Saturday: 10am to 4pm</p>
+                    <p>Sunday: closed</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>  &copy; What's Span.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Smooth-Scroll\smooth-scroll.js">   
+      </script>
+      <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
+  </body>
+</html>
